@@ -170,6 +170,6 @@ end
 
 def big_shoe_rebounds
   game_hash.collect do |location, team_data|
-    team_data[:players][player_stats][:shoe.values.max]
+    team_data[:players][:shoe.values.max]
   end
 end
