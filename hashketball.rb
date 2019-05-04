@@ -151,7 +151,8 @@ end
 def player_numbers(team_name)
   game_hash.collect do |location, team_data|
     if team_data[:team_name].include?(team_name)
-      team_data[:players].values.to_a.collect do |key, value|
+      binding.pry
+      team_data[:players].values.collect do |key, value|
       return key[:number]
      end
     end
